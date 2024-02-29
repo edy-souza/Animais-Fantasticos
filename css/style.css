@@ -1,0 +1,57 @@
+body, h1, h2, ul, li, p, dd, dt, dl {
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    display: block; /* Define o elemento como bloco, ocupando toda largura disponível, começando em uma nova linha. */
+    max-width: 100%;  /* Define uma largura máxima de 100% para garantir que o elemento não ultrapasse a largura do seu contêiner pai. */
+}
+
+ul {
+    list-style: none; /* Retira as bolinhas de marcação da lista*/
+}
+
+body {
+    background: #faf6ed;
+    color: #222;
+    -webkit-font-smoothing: antialiased;
+    display: grid;
+    grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
+}
+
+.menu {
+    grid-column: 3 / 5;
+    margin-top: 2rem;
+    background: #fb5;
+}
+
+.menu ul {
+    display: flex;  /* Coloca os itens do display um ao lado do outro. */
+    flex-wrap: wrap; /* Quebra a linha caso os itens não caiba no container*/
+    padding: 10px;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+    margin-right: 10px;
+    color: #222;
+    text-decoration: none;
+    font-family: 'IBM Plex Mono' , monospace;
+    font-weight: bold;
+    text-transform: uppercase; /* Coloca todas as letras MAIÚSCULAS */
+    font-size: 0.875rem;
+    letter-spacing: .1rem;  /* Espaçamento entre as letras */
+}
+
+.grid-section {
+    grid-column: 2 / 4;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 90px 300px 1fr;
+    grid-gap: 20px;
+    margin-bottom: 4rem;
+}
